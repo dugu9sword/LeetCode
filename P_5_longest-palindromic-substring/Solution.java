@@ -1,3 +1,7 @@
+/**
+ * 最初的做法是把s1倒转为s2,然后用动态规划寻找s1和s2的最大公共子串。
+ * 这样是不对的，因为这样找到的是s1中两个未必连续的倒转序列，比如abdeba中的ab和ba。
+ */
 public class Solution {
     
     private int start=0,maxlen=0;
