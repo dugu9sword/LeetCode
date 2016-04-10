@@ -19,7 +19,7 @@
  * 
  * 总之，指针i经过min数组内某个位置后，这个位置的值就确定了。
  * 
- * 算法4用的BFS+DP，naive，速度慢
+ * 算法4用的BFS，naive，速度慢
  */
 public class Solution {
 
@@ -115,7 +115,7 @@ public class Solution {
 
 /*
  * 算法4
- * TIME LIMIT EXCEEDED的解法，使用BFS+DP
+ * TIME LIMIT EXCEEDED的解法，使用BFS
 public class Solution {
 
     long _start,_end;
@@ -164,7 +164,7 @@ public class Solution {
         }
         _e();
 
-        //正向BFS，生成完整的队列
+        //BFS，生成完整的队列
         _s();
         int s,t;
         ArrayList<Integer> list;
@@ -186,7 +186,7 @@ public class Solution {
         _e();
 
 
-        //逆向DP，生成min
+        //生成min
         _s();
         int tmp;
         while(--header>=0){
